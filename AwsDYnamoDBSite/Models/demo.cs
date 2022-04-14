@@ -4,6 +4,7 @@ namespace AwsDYnamoDBSite.Models
 {
     public class demo
     {
+
         [DynamoDBTable("products")]
         public class Product
         {
@@ -19,5 +20,6 @@ namespace AwsDYnamoDBSite.Models
             [DynamoDBProperty("price")]
             public decimal Price { get; set; }
         }
+
     }
 }
